@@ -1,0 +1,9 @@
+Is your codebase riddled with strftime() using "%G-%m-%d"? Fear not!
+Just import strftime_fix before importing datetime and you'll be all set!
+
+>>> import strftime_fix
+>>> import datetime
+>>> datetime.datetime(year=2018, month=12, day=31).strftime('%G-%m-%d')
+'2018-12-31'
+>>> datetime.date(year=2018, month=12, day=31).strftime('%G-%m-%d')
+'2018-12-31'
